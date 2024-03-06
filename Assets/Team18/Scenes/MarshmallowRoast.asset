@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d24fbde2c24ab1544bd81b52842e8ec5, type: 3}
+  m_Name: MarshmallowRoast
+  m_EditorClassIdentifier: 
+  includeInRandomizer: 1
+  teamNumber: 0
+  gameTitle: Mellow Mallows
+  gameIcon: {fileID: 0}
+  prompt: Roast!
+  singlePlayerScene: {fileID: 102900000, guid: 434213dc83852954e804e9f05cc08db4, type: 3}
+  twoPlayerScene: {fileID: 0}
+  controls:
+  - label: Turn
+    primary: 76
+    joiner: 1
+    secondary: 44
+  - label: Roast
+    primary: 0
+    joiner: 0
+    secondary: 17
+  rightPlayerAltControls: []
+  singlePlayerScenePath: Assets/Team18/Scenes/MarshmallowRoast.unity
+  twoPlayerScenePath: 
+  postgameMessages: []
+  bannerImage: {fileID: 0}
+  developerCredits: []
+  licensedWorksCredits: []
