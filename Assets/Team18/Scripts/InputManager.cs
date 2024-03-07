@@ -121,12 +121,12 @@ namespace Team18
 
                     if (directionArray[highIndex] == direction)
                     {
-                        turnSpeed += 1f;
+                        turnSpeed += 0.75f;
                         break;
                     }
                     else if (directionArray[lowIndex] == direction)
                     {
-                        turnSpeed -= 1f;
+                        turnSpeed -= 0.75f;
                         break;
                     }
                 }

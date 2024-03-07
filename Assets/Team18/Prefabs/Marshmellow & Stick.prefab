@@ -232,10 +232,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointsTotal: 0
-  uncookedBadScoreThresh: 0.15
+  uncookedBadScoreThresh: 0.1
   cookedBadScoreThresh: 0.85
-  uncookedOkScoreThresh: 0.4
-  cookedOkScoreThresh: 0.6
+  uncookedOkScoreThresh: 0.45
+  cookedOkScoreThresh: 0.7
   scorePrefab: {fileID: 7402816334966904900, guid: 7d4aa2e4177046d4588d9c7ac44920df, type: 3}
 --- !u!54 &9175363933066237786
 Rigidbody:
@@ -290,7 +290,7 @@ HingeJoint:
     freeSpin: 0
   m_UseLimits: 1
   m_ExtendedLimits: 0
-  m_UseAcceleration: 1
+  m_UseAcceleration: 0
   m_Limits:
     min: -60
     max: 90
