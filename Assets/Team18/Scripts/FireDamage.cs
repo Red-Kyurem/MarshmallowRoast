@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace team18
+namespace Team18
 {
     public class FireDamage : MonoBehaviour
     {

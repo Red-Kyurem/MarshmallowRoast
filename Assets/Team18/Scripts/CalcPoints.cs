@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-namespace team18
+namespace Team18
 {
     public class CalcPoints : MonoBehaviour
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace team18
+namespace Team18
 {
     public class InputManager : MicrogameInputEvents
     {
@@ -64,7 +64,6 @@ namespace team18
             lookAtPos.y = transform.position.y;
 
             transform.LookAt(lookAtPos);
-            Debug.Log("hello!");
         }
 
         // Update is called once per frame
@@ -97,7 +96,6 @@ namespace team18
             if (direction != lastDirection && direction != Vector2.zero)
             {
                 Vector3 offset = Vector3.up * 5 + Vector3.right * 2;
-                Debug.DrawLine((Vector3)lastDirection + offset, (Vector3)direction + offset, Color.red, 5);
 
                 Vector2 lastDirRounded;
                 lastDirRounded.x = Round(lastDirection.x, 2);
@@ -109,13 +107,11 @@ namespace team18
                 {
                     if (lastDirRounded == dir)
                     {
-                        Debug.Log("Found!: " + dirIndex);
                         break;
                     }
                     dirIndex++;
                 }
 
-                Debug.Log("dirIndex: " + ((dirIndex - 1) % 8));
 
                 for (int directionNum = 1; directionNum < 4; directionNum++)
                 {
@@ -125,14 +121,12 @@ namespace team18
 
                     if (directionArray[highIndex] == direction)
                     {
-                        Debug.Log("Rotating Right!");
-                        turnSpeed -= 1f;
+                        turnSpeed += 1f;
                         break;
                     }
                     else if (directionArray[lowIndex] == direction)
                     {
-                        Debug.Log("Rotating Left!");
-                        turnSpeed += 1f;
+                        turnSpeed -= 1f;
                         break;
                     }
                 }
