@@ -15,7 +15,7 @@ MonoBehaviour:
   includeInRandomizer: 1
   teamNumber: 18
   gameTitle: Mellow Mallows
-  gameIcon: {fileID: 0}
+  gameIcon: {fileID: 21300000, guid: 83d118bdd2a0a2e44b0d1e9b91050f83, type: 3}
   announcerText: Roast!
   announcerAudioFile: Roast V1-RX10MDc_239-01
   _announcerAudio: {fileID: 8300000, guid: 24a1b1162dbcb4d4ca58c7d1b4c14f8a, type: 3}
