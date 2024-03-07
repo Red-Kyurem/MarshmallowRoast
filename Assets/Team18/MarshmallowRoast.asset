@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: MarshmallowRoast
   m_EditorClassIdentifier: 
   includeInRandomizer: 1
-  teamNumber: 0
+  teamNumber: 18
   gameTitle: Mellow Mallows
   gameIcon: {fileID: 0}
-  prompt: Roast!
+  announcerText: Roast!
+  announcerAudioFile: Roast V1-RX10MDc_239-01
+  _announcerAudio: {fileID: 8300000, guid: 24a1b1162dbcb4d4ca58c7d1b4c14f8a, type: 3}
   singlePlayerScene: {fileID: 102900000, guid: 434213dc83852954e804e9f05cc08db4, type: 3}
   twoPlayerScene: {fileID: 0}
   controls:
