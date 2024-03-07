@@ -72,9 +72,7 @@ namespace team18
         {
             direction = GetStickDirection();
 
-
             TurnMarshmallow();
-            
 
             button1Held = GetButton1Input();
             button2Held = GetButton2Input();
@@ -87,8 +85,6 @@ namespace team18
             {
                 joint.useMotor = false;
             }
-
-
         }
 
         Vector2 GetStickDirection()
@@ -181,5 +177,25 @@ namespace team18
                 return false;
             }
         }
+
+        protected override void OnTimesUp()
+        {
+            Invoke("CallCalcPoints", 0.5f);
+        }
+
+        void CallCalcPoints()
+        {
+            transform.GetChild(0).GetChild(0).GetComponentInChildren<BurnableAsset>();
+            List<GameObject> marshmellows = new List<GameObject>();
+
+            foreach (Transform m in transform.GetChild(0).GetChild(0))
+            {
+                marshmellows.Add(m.gameObject);
+            }
+
+            gameObject.GetComponent<CalcPoints>().CalcMarshmellowPoints(marshmellows.ToArray());
+        }
     }
+
+
 }

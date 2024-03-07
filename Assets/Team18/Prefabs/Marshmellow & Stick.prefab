@@ -179,6 +179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2210206562689898207}
   - component: {fileID: 7964502593041349228}
+  - component: {fileID: 1071993896460764651}
   - component: {fileID: 9175363933066237786}
   - component: {fileID: 3533188690420620957}
   m_Layer: 0
@@ -218,6 +219,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   getInputFrom: 0
   direction: {x: 0, y: 0}
+--- !u!114 &1071993896460764651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7694743224120596737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5da077d429ca8441aa1dde990d06527, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsTotal: 0
+  uncookedBadScoreThresh: 0.15
+  cookedBadScoreThresh: 0.85
+  uncookedOkScoreThresh: 0.4
+  cookedOkScoreThresh: 0.6
+  scorePrefab: {fileID: 7402816334966904900, guid: 7d4aa2e4177046d4588d9c7ac44920df, type: 3}
 --- !u!54 &9175363933066237786
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -709,6 +728,10 @@ PrefabInstance:
     - target: {fileID: 1869209338836183607, guid: 5c71b7ccb218fed49899b4ec8c885551, type: 3}
       propertyPath: m_Name
       value: MarshmellowSection
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489206270384462990, guid: 5c71b7ccb218fed49899b4ec8c885551, type: 3}
+      propertyPath: gradient.ctime4
+      value: 40959
       objectReference: {fileID: 0}
     - target: {fileID: 2531800966516258829, guid: 5c71b7ccb218fed49899b4ec8c885551, type: 3}
       propertyPath: m_LocalScale.x
