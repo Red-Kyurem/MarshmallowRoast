@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d24fbde2c24ab1544bd81b52842e8ec5, type: 3}
-  m_Name: MarshmallowRoast
+  m_Name: T18_MarshmallowRoast
   m_EditorClassIdentifier: 
   includeInRandomizer: 1
   teamNumber: 18
   gameTitle: Mellow Mallows
   gameIcon: {fileID: 21300000, guid: 83d118bdd2a0a2e44b0d1e9b91050f83, type: 3}
-  announcerText: Roast!
+  announcerText: Roast
   announcerAudioFile: Roast V1-RX10MDc_239-01
   _announcerAudio: {fileID: 8300000, guid: 24a1b1162dbcb4d4ca58c7d1b4c14f8a, type: 3}
   singlePlayerScene: {fileID: 102900000, guid: 434213dc83852954e804e9f05cc08db4, type: 3}
@@ -33,7 +33,19 @@ MonoBehaviour:
   rightPlayerAltControls: []
   singlePlayerScenePath: Assets/Team18/Scenes/MarshmallowRoast.unity
   twoPlayerScenePath: 
-  postgameMessages: []
-  bannerImage: {fileID: 0}
-  developerCredits: []
+  postgameMessages:
+  - We hope you'll come back for s'more!
+  - Thank you very marsh!
+  - Mmmm, roasty toasty!
+  - Careful now, not too close to the fire!
+  bannerImage: {fileID: 21300000, guid: 8084643debd6cb140bb667199a179bb9, type: 3}
+  developerCredits:
+  - Zachary Taylor
+  - Ronit Rathod
+  - Violet Li
+  - Jimmy Ding
+  - Alynah Angeles
+  - Claudia Rando
+  - Jack Caunter
+  - Christopher Anderson-Lundy
   licensedWorksCredits: []
