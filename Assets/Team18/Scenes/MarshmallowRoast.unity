@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -888,9 +888,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3533188690420620957, guid: 957df5ca1a18b4b488b43d8ce3653c94, type: 3}
+      propertyPath: m_Limits.max
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3533188690420620957, guid: 957df5ca1a18b4b488b43d8ce3653c94, type: 3}
+      propertyPath: m_Motor.targetVelocity
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 7694743224120596737, guid: 957df5ca1a18b4b488b43d8ce3653c94, type: 3}
       propertyPath: m_Name
       value: Marshmellow & Stick
+      objectReference: {fileID: 0}
+    - target: {fileID: 9175363933066237786, guid: 957df5ca1a18b4b488b43d8ce3653c94, type: 3}
+      propertyPath: m_Drag
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
