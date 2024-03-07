@@ -130,13 +130,13 @@ namespace team18
                     if (directionArray[highIndex] == direction)
                     {
                         Debug.Log("Rotating Right!");
-                        turnSpeed += 1f;
+                        turnSpeed -= 1f;
                         break;
                     }
                     else if (directionArray[lowIndex] == direction)
                     {
                         Debug.Log("Rotating Left!");
-                        turnSpeed -= 1f;
+                        turnSpeed += 1f;
                         break;
                     }
                 }
