@@ -384,6 +384,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Campfire
       objectReference: {fileID: 0}
+    - target: {fileID: 628220506624891101, guid: 5d77235b02afe404b81929210a0782fb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.495
+      objectReference: {fileID: 0}
     - target: {fileID: 6421564185854982014, guid: 5d77235b02afe404b81929210a0782fb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.034
@@ -424,13 +428,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8536196794111866436, guid: 5d77235b02afe404b81929210a0782fb, type: 3}
-      propertyPath: m_Range
-      value: 25
+    - target: {fileID: 7449424904833806366, guid: 5d77235b02afe404b81929210a0782fb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1
       objectReference: {fileID: 0}
-    - target: {fileID: 8536196794111866436, guid: 5d77235b02afe404b81929210a0782fb, type: 3}
-      propertyPath: m_Intensity
-      value: 4.3
+    - target: {fileID: 8562119865763544650, guid: 5d77235b02afe404b81929210a0782fb, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.1848743
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

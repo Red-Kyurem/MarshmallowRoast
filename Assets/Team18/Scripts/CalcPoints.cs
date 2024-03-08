@@ -15,10 +15,13 @@ namespace Team18
         [Range(0f, 1f)]
         public float cookedBadScoreThresh = 0.85f;
         [Range(0f, 1f)]
-        public float uncookedOkScoreThresh = 0.40f;
+        public float uncookedOkScoreThresh = 0.25f;
         [Range(0f, 1f)]
-        public float cookedOkScoreThresh = 0.60f;
-
+        public float cookedOkScoreThresh = 0.75f;
+        [Range(0f, 1f)]
+        public float uncookedGoodScoreThresh = 0.40f;
+        [Range(0f, 1f)]
+        public float cookedGoodScoreThresh = 0.60f;
         public GameObject scorePrefab;
 
         GameObject badImage;
@@ -59,6 +62,10 @@ namespace Team18
                 else if (healthPercentage <= uncookedOkScoreThresh || healthPercentage >= cookedOkScoreThresh)
                 {
                     pointsTotal += 1;
+                }
+                else if (healthPercentage <= uncookedGoodScoreThresh || healthPercentage >= cookedGoodScoreThresh)
+                {
+                    pointsTotal += 2;
                 }
                 else
                 {

@@ -31,23 +31,6 @@ namespace Team18
 
         HingeJoint joint;
 
-        // i dont know why this fixed the issue of game controllers not working, but i'll keep them in regardless
-        protected override void OnButton1Pressed(InputAction.CallbackContext context)
-        {
-
-        }
-        protected override void OnButton1Released(InputAction.CallbackContext context)
-        {
-
-        }
-        protected override void OnButton2Pressed(InputAction.CallbackContext context)
-        {
-
-        }
-        protected override void OnButton2Released(InputAction.CallbackContext context)
-        {
-
-        }
 
         // Start is called before the first frame update
         void Start()
