@@ -218,7 +218,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   getInputFrom: 0
-  direction: {x: 0, y: 0}
+  playerSide: 0
+  button1Held: 0
+  button2Held: 0
 --- !u!114 &1071993896460764651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -295,7 +297,7 @@ HingeJoint:
   m_UseAcceleration: 0
   m_Limits:
     min: -60
-    max: 90
+    max: 85
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0

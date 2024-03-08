@@ -20,19 +20,27 @@ MonoBehaviour:
   announcerAudioFile: Roast V1-RX10MDc_239-01
   _announcerAudio: {fileID: 8300000, guid: 24a1b1162dbcb4d4ca58c7d1b4c14f8a, type: 3}
   singlePlayerScene: {fileID: 102900000, guid: 434213dc83852954e804e9f05cc08db4, type: 3}
-  twoPlayerScene: {fileID: 0}
+  twoPlayerScene: {fileID: 102900000, guid: 1efa0edb152776d4fa585b98721dc32b, type: 3}
   controls:
   - label: Turn
     primary: 76
     joiner: 1
     secondary: 44
   - label: Roast
-    primary: 0
-    joiner: 0
-    secondary: 17
-  rightPlayerAltControls: []
-  singlePlayerScenePath: Assets/Team18/Scenes/MarshmallowRoast.unity
-  twoPlayerScenePath: 
+    primary: 17
+    joiner: 1
+    secondary: 18
+  rightPlayerAltControls:
+  - label: Turn
+    primary: 76
+    joiner: 1
+    secondary: 44
+  - label: Roast
+    primary: 17
+    joiner: 1
+    secondary: 18
+  singlePlayerScenePath: Assets/Team18/Scenes/MarshmallowRoast - P1.unity
+  twoPlayerScenePath: Assets/Team18/Scenes/MarshmallowRoast - P2.unity
   postgameMessages:
   - We hope you'll come back for s'more!
   - Thank you very marsh!

@@ -8,7 +8,7 @@ namespace Team18
     {
 
         public float currentHealth = 0;
-        public float maxHealth = 100;
+        public float maxHealth = 50;
 
         public Gradient gradient;
         Material material;

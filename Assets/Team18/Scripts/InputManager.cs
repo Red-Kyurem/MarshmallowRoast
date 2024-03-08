@@ -5,12 +5,16 @@ using UnityEngine.InputSystem;
 
 namespace Team18
 {
+    public enum PlayerSide { Left, Right, Any };
+
     public class InputManager : MicrogameInputEvents
     {
         GameObject campfire;
         GameObject childStick;
 
-        public Vector2 direction;
+        public PlayerSide playerSide;
+
+        Vector2 direction = Vector2.zero;
         Vector2 lastDirection = Vector2.zero;
         List<Vector2> directionHistory = new List<Vector2>();
         Vector2[] directionArray = { 
@@ -26,8 +30,8 @@ namespace Team18
 
         float turnSpeed = 0;
 
-        bool button1Held = false;
-        bool button2Held = false;
+        public bool button1Held = false;
+        public bool button2Held = false;
 
         HingeJoint joint;
 
@@ -35,6 +39,8 @@ namespace Team18
         // Start is called before the first frame update
         void Start()
         {
+            gameObject.SetActive(true);
+
             // Tag0 is the campfire
             campfire = GameObject.FindGameObjectWithTag("Tag0");
             childStick = transform.GetChild(0).gameObject;
@@ -59,7 +65,7 @@ namespace Team18
             button1Held = GetButton1Input();
             button2Held = GetButton2Input();
 
-            if (button1Held)
+            if (button1Held || button2Held)
             {
                 joint.useMotor = true;
             }
@@ -170,7 +176,25 @@ namespace Team18
                 marshmellows.Add(m.gameObject);
             }
 
-            gameObject.GetComponent<CalcPoints>().CalcMarshmellowPoints(marshmellows.ToArray());
+            gameObject.GetComponent<CalcPoints>().CalcPointsStart(marshmellows.ToArray(), playerSide);
+        }
+
+        int GetActivePlayers()
+        {
+            switch (MicrogamesManager.Instance.RecentlyActivePlayers)
+            {
+                case PlayerID.LeftPlayer:
+                    return 0;
+
+                case PlayerID.RightPlayer:
+                    return 1;
+
+                case PlayerID.BothPlayers:
+                    return 2;
+
+                default:
+                    return 3;
+            }
         }
     }
 

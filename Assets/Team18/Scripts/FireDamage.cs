@@ -14,9 +14,12 @@ namespace Team18
         // Start is called before the first frame update
         void Start()
         {
-            warningAudio = GetComponent<AudioSource>();
-            warningAudio.Play();
-            warningAudio.Pause();
+            if (playWarningSound)
+            { 
+                warningAudio = GetComponent<AudioSource>();
+                warningAudio.Play();
+                warningAudio.Pause();
+            }
         }
 
         // Update is called once per frame

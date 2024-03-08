@@ -11,7 +11,7 @@ namespace Team18
         GameObject[] marshmellows;
 
         [Range(0f, 1f)]
-        public float uncookedBadScoreThresh = 0.15f;
+        public float uncookedBadScoreThresh = 0.1f;
         [Range(0f, 1f)]
         public float cookedBadScoreThresh = 0.85f;
         [Range(0f, 1f)]
@@ -29,10 +29,24 @@ namespace Team18
         GameObject perfectImage;
         GameObject pointsText;
 
-        private void Start()
+        public void CalcPointsStart(GameObject[] marshmellowArray, PlayerSide playerSide)
         {
+            Vector3 offset = Vector3.zero;
+
+            if (playerSide == PlayerSide.Left)
+            {
+                offset = Vector3.left * 350 + Vector3.down * 350;
+            }
+            else if (playerSide == PlayerSide.Right)
+            {
+                offset = Vector3.right * 350 + Vector3.down * 350;
+            }
+            
+
             Transform parent = GameObject.FindGameObjectWithTag("Tag1").transform;
             GameObject newScorePrefab = Instantiate(scorePrefab, parent);
+
+            newScorePrefab.transform.position += offset;
 
             badImage = newScorePrefab.transform.GetChild(0).gameObject;
             okImage = newScorePrefab.transform.GetChild(1).gameObject;
@@ -45,6 +59,8 @@ namespace Team18
 
             pointsText.GetComponent<TextMeshProUGUI>().text = "pts.";
             pointsText.SetActive(false);
+
+            CalcMarshmellowPoints(marshmellowArray);
         }
 
         public void CalcMarshmellowPoints(GameObject[] marshmellowArray)

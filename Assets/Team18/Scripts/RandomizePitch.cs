@@ -6,11 +6,11 @@ namespace Team18
 {
     public class RandomizePitch : MonoBehaviour
     {
-        public float lowestPitch = 100;
-        public float highestPitch = 100;
+        public float lowestPitch = 2.5f;
+        public float highestPitch = 4f;
 
-        public float lowestVolume = 1;
-        public float highestVolume = 1;
+        public float lowestVolume = 0.75f;
+        public float highestVolume = 1.25f;
 
 
         AudioSource source;
