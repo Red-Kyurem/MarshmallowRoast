@@ -48,13 +48,13 @@ MonoBehaviour:
   - Careful now, not too close to the fire!
   bannerImage: {fileID: 21300000, guid: 8084643debd6cb140bb667199a179bb9, type: 3}
   developerCredits:
-  - Zachary Taylor
-  - Ronit Rathod
-  - Violet Li
-  - Jimmy Ding
   - Alynah Angeles
+  - Anis Halloway
+  - Christopher Anderson-Lundy
   - Claudia Rando
   - Jack Caunter
-  - Christopher Anderson-Lundy
-  - Anis Halloway
+  - Jimmy Ding
+  - Ronit Rathod
+  - Violet Li
+  - Zachary Taylor
   licensedWorksCredits: []
